@@ -25,7 +25,7 @@ SpringFramework + JerseyによるRESTfulAPIのサンプル
   
 ## simple_baseブランチ
 
-- []()
+- [Jersey+Spring FrameworkでRESTfulAPIの最小構成サンプル]()
   - Jersey+Spring FrameworkでHello World的なものを表示する
   - DIを使ったテストも。
 
