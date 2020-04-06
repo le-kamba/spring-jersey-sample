@@ -21,10 +21,16 @@ SpringFramework + JerseyによるRESTfulAPIのサンプル
 ## masterブランチ
 
 - [IntelliJでSpringFramework(MVC)のmavenプロジェクトHelloWorld(2020/3)](https://qiita.com/kasa_le/items/6aaf17823db67c951fb0)
-  - 前準備。IntelliJ IDEAでSpring MVSがTomcatで起動するまで
+  - 前準備。IntelliJ IDEAでSpring MVCがTomcatで起動するまで
+  
+## simple_baseブランチ
+
+- []()
+  - Jersey+Spring FrameworkでHello World的なものを表示する
+  - DIを使ったテストも。
 
 ## spring_jerseyブランチ
 
 - (WIP)[Jersey+SpringFrameworkでRESTfulAPI]()
   - jerseyでRESTfulAPIが起動するサンプル
-  
+  - マルチモジュール対応
