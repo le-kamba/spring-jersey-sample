@@ -15,16 +15,9 @@ SpringFramework + JerseyによるRESTfulAPIのサンプル
 |Postman|7.19.1|
 |Spring Framework|5.2.4-RELEASE|
 
-# ブランチと参照記事
-各ブランチは、以下の記事で作成したプロジェクトです。
+# ブランチ説明と参照記事
+**simple_base**ブランチは、以下の記事で作成したプロジェクトです。
 
-## masterブランチ
+- (WIP)[Jersey+Spring FrameworkでRESTfulAPIの最小構成サンプル]()
 
-- [IntelliJでSpringFramework(MVC)のmavenプロジェクトHelloWorld(2020/3)](https://qiita.com/kasa_le/items/6aaf17823db67c951fb0)
-  - 前準備。IntelliJ IDEAでSpring MVSがTomcatで起動するまで
-
-## spring_jerseyブランチ
-
-- (WIP)[Jersey+SpringFrameworkでRESTfulAPI]()
-  - jerseyでRESTfulAPIが起動するサンプル
   
