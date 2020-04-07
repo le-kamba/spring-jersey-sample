@@ -18,6 +18,6 @@ SpringFramework + JerseyによるRESTfulAPIのサンプル
 # ブランチ説明と参照記事
 **simple_base**ブランチは、以下の記事で作成したプロジェクトです。
 
-- (WIP)[Jersey+Spring FrameworkでRESTfulAPIの最小構成サンプル](https://qiita.com/kasa_le/items/59ebd6b5490945dd5580)
+- [Jersey+Spring FrameworkでRESTfulAPIの最小構成サンプル](https://qiita.com/kasa_le/items/59ebd6b5490945dd5580)
 
   
