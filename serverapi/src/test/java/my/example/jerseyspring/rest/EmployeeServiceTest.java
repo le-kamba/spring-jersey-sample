@@ -15,6 +15,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -32,12 +33,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ContextConfiguration("classpath:/applicationContext.xml")
 public class EmployeeServiceTest extends JerseyTest {
 
+    @Autowired
+    EmployeeRepository employeeRepository;
+
     @Override
     protected Application configure() {
         return new ResourceConfig(EmployeeService.class)
                 .register(DuplicateExceptionHandler.class)
                 .register(NameNotFoundExceptionHandler.class)
-                .register(NotFoundExceptionHandler.class);
+                .register(NotFoundExceptionHandler.class)
+                .register(this);
     }
 
     @BeforeEach
@@ -78,7 +83,7 @@ public class EmployeeServiceTest extends JerseyTest {
                 .isEqualTo(mediaType);
 
         Employee employee = response.readEntity(Employee.class);
-        Employee expect = EmployeeRepository.getInstance().select(id);
+        Employee expect = employeeRepository.select(id);
         assertThat(employee).isEqualToComparingFieldByField(expect);
     }
 
@@ -145,7 +150,7 @@ public class EmployeeServiceTest extends JerseyTest {
         assertThat(response.getStatus()).isEqualTo(200);
 
         Employee employee = target("/employees/" + id).request().get(Employee.class);
-        Employee expected = EmployeeRepository.getInstance().select(id);
+        Employee expected = employeeRepository.select(id);
         assertThat(employee).isEqualToComparingFieldByField(expected);
     }
 

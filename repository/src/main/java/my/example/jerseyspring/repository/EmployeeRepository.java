@@ -12,7 +12,6 @@ import java.util.List;
 
 @Repository
 public class EmployeeRepository {
-    private static EmployeeRepository instance;
 
     private List<Employee> employeeList;
 
@@ -23,12 +22,6 @@ public class EmployeeRepository {
         employeeList.add(new Employee(5, "Eclair"));
         employeeList.add(new Employee(8, "Froyo"));
         employeeList.add(new Employee(9, "Gingerbread"));
-
-        instance = this;
-    }
-
-    static public EmployeeRepository getInstance() {
-        return instance;
     }
 
     public List<Employee> selectAll() {
