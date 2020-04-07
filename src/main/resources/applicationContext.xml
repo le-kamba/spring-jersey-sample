@@ -9,5 +9,6 @@
     <context:component-scan base-package="my.example.jerseyspring"/>
 
     <bean id="transactionBo" class="my.example.jerseyspring.transaction.impl.TransactionBoImpl"/>
+    <bean id="employeeRepository" class="my.example.jerseyspring.repository.EmployeeRepository"/>
 
 </beans>
