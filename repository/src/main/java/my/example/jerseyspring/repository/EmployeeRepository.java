@@ -16,7 +16,7 @@ public class EmployeeRepository {
 
     private List<Employee> employeeList;
 
-    private EmployeeRepository() {
+    public EmployeeRepository() {
         employeeList = new ArrayList<>();
         employeeList.add(new Employee(3, "Cupcake"));
         employeeList.add(new Employee(4, "Donuts"));
