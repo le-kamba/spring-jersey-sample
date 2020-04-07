@@ -15,7 +15,6 @@
     </modules>
 
     <build>
-        <finalName>JerseySpringRESTful</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
