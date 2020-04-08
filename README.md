@@ -31,6 +31,6 @@ SpringFramework + JerseyによるRESTfulAPIのサンプル
 
 ## spring_jerseyブランチ
 
-- (WIP)[Jersey+SpringFrameworkでRESTfulAPI]()
+- [IntelliJ+Jersey+Spring FrameworkでRESTfulAPIのマルチモジュールサンプル](https://qiita.com/kasa_le/items/2714f4deac718715f2d2)
   - jerseyでRESTfulAPIが起動するサンプル
   - マルチモジュール対応
