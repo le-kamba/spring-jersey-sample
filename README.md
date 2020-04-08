@@ -18,6 +18,4 @@ SpringFramework + JerseyによるRESTfulAPIのサンプル
 # ブランチと参照記事
 **spring_jersey**ブランチは、以下の記事で作成したプロジェクトです。
 
-- (WIP)[Jersey+Spring FrameworkでRESTfulAPI]()
-
-  
+- [Jersey+Spring FrameworkでRESTfulAPI](https://qiita.com/kasa_le/items/2714f4deac718715f2d2)
